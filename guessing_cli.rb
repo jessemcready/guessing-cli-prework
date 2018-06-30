@@ -6,11 +6,11 @@ def run_guessing_game
     puts "Guess a number between 1 and 6."
     input = gets.chomp
     case input
-    when input.to_i == secret_number
-      puts "You guessed the correct number!"
-      return
     when input == "exit"
       puts "Goodbye!"
+      return
+    when input.to_i == secret_number
+      puts "You guessed the correct number!"
       return
     end
   end
