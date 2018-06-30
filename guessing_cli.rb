@@ -7,7 +7,7 @@ def run_guessing_game
     input = gets.chomp
     puts "INPUT #{input}"
     case input
-    when input == "exit"
+    when "exit"
       puts "Goodbye!"
     when input.to_i == secret_number
       puts "You guessed the correct number!"
