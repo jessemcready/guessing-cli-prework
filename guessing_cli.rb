@@ -11,7 +11,7 @@ def run_guessing_game
   end 
   while input != "exit"
     input = gets.chomp
-    puts "INPUT #{input.to_i}"
+    puts "INPUT #{input}"
     case input
     when input == "exit"
       puts "Goodbye!"
