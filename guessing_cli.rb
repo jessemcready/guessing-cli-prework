@@ -5,9 +5,8 @@ def run_guessing_game
   until input == secret_number
     puts "Guess a number between 1 and 6."
     input = gets.chomp
-    input = input.to_i
     case input
-    when input == secret_number
+    when input.to_i == secret_number
       puts "You guessed the correct number!"
       return
     when input == "exit"
