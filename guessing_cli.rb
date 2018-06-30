@@ -9,7 +9,7 @@ def run_guessing_game
     case input
     when "exit"
       puts "Goodbye!"
-    when input.to_i == secret_number
+    when secret_number
       puts "You guessed the correct number!"
     end
   end
